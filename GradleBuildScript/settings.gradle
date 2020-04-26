@@ -1,0 +1,6 @@
+include ':library2'
+include ':library1'
+include ':app'
+rootProject.name = "GradleBuildScript"
+
+// 插入一二阶段之间的代码

@@ -1,0 +1,11 @@
+repositories {
+  google()
+  jcenter()
+}
+
+dependencies {
+  implementation "com.android.tools.build:gradle:4.0.0-beta04"
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
