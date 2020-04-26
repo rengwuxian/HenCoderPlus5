@@ -1,0 +1,2 @@
+include ':threadinteraction'
+rootProject.name = "ThreadInteraction"

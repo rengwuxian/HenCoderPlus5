@@ -1,0 +1,2 @@
+include ':threadandroid', ':androiddemo'
+rootProject.name = "ThreadAndroid"
