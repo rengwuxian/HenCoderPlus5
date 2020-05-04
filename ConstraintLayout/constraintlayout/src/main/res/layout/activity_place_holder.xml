@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.hencoder.PlaceHolder">
+
+    <androidx.constraintlayout.widget.Placeholder
+            android:id="@+id/placeholder"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/favorite"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="onClick"
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:tint="#E64A19"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/mail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mail"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="onClick"
+            android:src="@drawable/ic_mail_black_24dp"
+            android:tint="#512DA8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/save"
+            app:layout_constraintStart_toEndOf="@id/favorite"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/save"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="onClick"
+            android:src="@drawable/ic_save_black_24dp"
+            android:tint="#D32F2F"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/play"
+            app:layout_constraintStart_toEndOf="@id/mail"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/play"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:onClick="onClick"
+            android:src="@drawable/ic_play_circle_filled_black_24dp"
+            android:tint="#FFA000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/save"
+            app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
